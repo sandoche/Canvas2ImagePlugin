@@ -99,10 +99,10 @@ public class Canvas2ImagePlugin extends CordovaPlugin {
 				folder = Environment.getExternalStorageDirectory();
 			}
 
-			File imageFile = new File(folder, "TEDx_" + date.toString() + ".png");
+			File imageFile = new File(folder, "TEDx_" + date.toString() + ".jpg");
 
 			FileOutputStream out = new FileOutputStream(imageFile);
-			bmp.compress(Bitmap.CompressFormat.JPEG, 70, out);
+			bmp.compress(Bitmap.CompressFormat.JPEG, 65, out);
 			out.flush();
 			out.close();
 
